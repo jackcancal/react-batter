@@ -1,0 +1,187 @@
+@import "../stylus/mixins.styl"
+.scroll-container
+  width 100%
+  height (667*2/$rem)
+  box-sizing border-box
+  margin-top (74*2/$rem)
+  margin-bottom (120/$rem)
+  .swiper-container
+    width: 100%
+    margin (-20/$rem) 0
+    .swiper-pagination
+      bottom (40/$rem)
+      >span
+        width (40/$rem)
+        height: (5/$rem);
+        border-radius (5/$rem)
+        &.swiper-pagination-bullet-active
+          background-color: #fff;
+    .swiper-img
+      width 100%
+  .g-grow
+    position relative
+    z-index 2
+    width: 100%
+    background-color: #fff;
+    height: (72/$rem)
+    box-sizing border-box
+    padding 0 (40/$rem)
+    display flex
+    align-items center
+    justify-content space-between
+    font-size (26/$rem)
+    .g-item-icon
+      width: (32/$rem)
+      height: (32/$rem)
+      margin-right: (10/$rem);
+      display inline-block
+      vertical-align middle
+    .g-item-text
+      display inline-block
+      vertical-align middle
+      line-height (32/$rem)
+  .direct-goods
+    width: 100%
+    height: (293*2/$rem)
+    box-sizing border-box
+    background-color: #fff;
+    margin-top: (20/$rem)
+    margin-bottom (20/$rem)
+    .goods-card
+      height: (234*2/$rem)
+      box-sizing border-box
+      margin 0 (16/$rem)
+      display flex
+      flex-wrap wrap
+      .goods-item
+        width: (177*2/$rem)
+        height: (230/$rem)
+        box-sizing border-box
+        background-color: #eee;
+        background-image: url("../image/pp.png");
+        background-size (176*2/$rem)
+        background-repeat no-repeat
+        &.goods-item1
+          margin-right (8/$rem)
+          margin-bottom (8/$rem)
+        &.goods-item3
+          margin-right: (8/$rem)
+        .item-detail
+          width: 100%
+          display flex
+          padding-top (20/$rem)
+          padding-left (20/$rem)
+          font-size (26/$rem)
+          flex-direction column
+          .item-origin
+            width: 100%
+            height: (33/$rem)
+            margin-bottom (6/$rem)
+          .item-price
+            width: 100%
+            height (34/$rem)
+          .item-new
+            display block
+            width: (64/$rem)
+            height (32/$rem)
+            margin-top (8/$rem)
+
+
+  .limit-goods
+    background-color: #fff;
+    height: (190*2/$rem)
+    width: 100%
+    display flex
+    padding (30/$rem) (60/$rem)
+    box-sizing border-box
+    .limit-description
+      width: (160*2/$rem)
+      height (167*2/$rem)
+      display flex
+      box-sizing border-box
+      padding (20*2/$rem) 0
+      flex-direction column
+      justify-content space-around
+      .text
+        font-size (20*2/$rem)
+        letter-spacing (5*2/$rem)
+      .time
+        font-size (16*2/$rem)
+        .time-table
+          color white
+          width (31*2/$rem)
+          height (28*2/$rem)
+          text-align center
+          line-height (28*2/$rem)
+          background-color: #333;
+          display inline-block
+      .next-time
+        font-size (12*2/$rem)
+    .limit-img
+      width (160*2/$rem)
+      height: (160*2/$rem)
+      position relative
+      >img
+        width: 100%
+        height: 100%
+      .price
+        position absolute
+        right: (10*2/$rem)
+        bottom (20*2/$rem)
+        width: (48*2/$rem)
+        height: (48*2/$rem)
+        border-radius 50%
+        font-size (13*2/$rem)
+        font-weight bold
+        color white
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+        background-color: rgb(245, 149, 36);
+  .sale
+    width: 100%
+    height: (150*2/$rem)
+    margin (10*2/$rem) 0
+    background-image url("../image/sale.jpg");
+    background-size 100%;
+  .special-select
+    height: (281.5*2/$rem)
+    width: 100%
+    background-color: #fff;
+    .special-goods-warp
+      width 100%
+      .special-goods-content
+        height: (226.5*2/$rem)
+        box-sizing border-box
+        padding 0 (20*2/$rem) (20*2/$rem) (20*2/$rem)
+        .special-goods
+          clearFix()
+          width (893*2/$rem)
+          .special-item
+            float left
+            margin-right (10*2/$rem)
+            width (287.5*2/$rem)
+            height (208.5*2/$rem)
+            display flex
+            flex-direction column
+            justify-content space-between
+            .special-img
+              width: 100%
+              height: (161*2/$rem)
+            .text
+              width: 100%
+              height (18*2/$rem)
+              margin-bottom (2.5*2/$rem)
+              display flex
+              justify-content space-between
+              >h4
+                font-size (14*2/$rem)
+              >span
+                color rgb(180, 40, 45)
+                font-size (14*2/$rem)
+            .desc
+              width: 100%
+              height (18*2/$rem)
+              font-size (12.5*2/$rem)
+              color #7e8c8d

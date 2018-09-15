@@ -1,0 +1,119 @@
+@import "../stylus/mixins.styl"
+.index-floor
+  background-color: #fff;
+  margin-bottom (10*2/$rem)
+  .first-new
+    height (130*2/$rem)
+    margin-bottom (20*2/$rem)
+    background-size 100%
+    background-repeat no-repeat
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    .first-txt
+      height: (20.5*2/$rem)
+      font-size (38/$rem)
+    .text
+      text-align center
+      font-size (32/$rem)
+      line-height (28*2/$rem)
+      width: (120*2/$rem)
+      height (28*2/$rem)
+      margin-top: (10*2/$rem);
+      .to-show-all
+        width: (5*2/$rem)
+        height: (11*2/$rem)
+        margin-left: (2*2/$rem);
+  .good-grid
+    height: (230*2/$rem)
+    .scroll-container1
+      width: (1600*2/$rem)
+      .scroll-wrapper
+        width: (1600*2/$rem)
+        display flex
+        padding 0 (8*2/$rem)
+        .scroll-slide
+          width: (140*2/$rem)
+          height: 100%
+          display flex
+          flex-direction column
+          justify-content space-between
+          align-items center
+          margin 0 (8*2/$rem)
+          &.scroll-slide-last
+            font-size (32/$rem)
+            height: (280/$rem)
+            width: (280/$rem)
+            background-color: #eee;
+            display flex
+            justify-content center
+            align-items center
+            >div
+              width: 95%
+              height: 95%;
+              display flex
+              justify-content center
+              align-items center
+              line-height (280/$rem)
+              background-color: #fff
+              margin-right (1.5/$rem)
+              margin-bottom  (1.5/$rem)
+          .scroll-img
+            height: (280/$rem)
+            width: (280/$rem)
+            background-color: #eee;
+            margin-bottom (10*2/$rem)
+          .goods-pref
+            height: (15*2/$rem)
+            font-size (12*2/$rem)
+            width 100%
+            color white
+            text-align left
+            box-sizing border-box
+            padding 0 (15/$rem)
+            display flex
+            >span
+              background-color: #f48f18
+              display inline-block
+              text-align center
+              height: (15*2/$rem)
+              line-height (15*2/$rem)
+              margin-right (20/$rem)
+              >span
+                display inline-block
+                transform scale(.8)
+            .pref-txt1
+              width: (60*2/$rem)
+            .pref-txt2
+              width: (46*2/$rem)
+          .goods-name
+            box-sizing border-box
+            width (140*2/$rem)
+            padding 0 (5*2/$rem)
+            margin (5*2/$rem) 0
+            height: (15.5*2/$rem)
+            font-size (14*2/$rem)
+            overflow hidden
+            white-space nowrap
+            text-overflow ellipsis
+          .goods-surprise
+            box-sizing border-box
+            width (140*2/$rem)
+            padding 0 (5*2/$rem)
+            margin-bottom  (5*2/$rem)
+            height: (15.5*2/$rem)
+            font-size (12*2/$rem)
+            overflow hidden
+            white-space nowrap
+            color #777
+            text-overflow ellipsis
+
+          .goods-price
+            box-sizing border-box
+            width (140*2/$rem)
+            height: (15.5*2/$rem)
+            font-size (13*2/$rem)
+            padding 0 (5*2/$rem)
+            color rgb(192, 74, 78)
+            font-weight 550
